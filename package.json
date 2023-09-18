@@ -1,0 +1,22 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "watch": "node-sass --watch src/resources/scss -o src/public/css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "phong",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "express-handlebars": "^5.1.0",
+    "morgan": "^1.10.0",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
+}
