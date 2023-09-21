@@ -1,6 +1,8 @@
 @import 'variables';
 
-
+a{
+    text-decoration: none;
+}
 // //////////////////////////////////Header
 nav{
     color: white;
@@ -10,6 +12,7 @@ nav{
     .container{
         display: flex;
         align-items: center;
+        justify-content: space-between;
         height: 100%;
         width: 1400px;
         max-width: 100%;
@@ -18,6 +21,7 @@ nav{
 
         a{
             font-family: system-ui;
+            color: white;
             cursor: pointer;
             margin: 0;
             padding: 0;
@@ -31,6 +35,10 @@ nav{
         align-items: center;
         justify-content: center;
         height: 100%;
+        .menu-item{
+            font-size: 16px;
+        }
+      
     }
 
     ul{
@@ -40,9 +48,14 @@ nav{
         align-items: center;
         list-style: none;
         li{
+            font-size: 16px;
             font-weight: bold;
             margin: 0 15px;
         }
+    }
+
+    .bg{
+        background-color: $primary-cl;
     }
 }
 
@@ -72,6 +85,7 @@ nav{
         padding: 10px;
         .name{
             padding: 10px 0;
+            color: $primary-cl;
         }
         .description{
             overflow: hidden;
@@ -92,6 +106,35 @@ nav{
             background-color: rgb(75, 190, 134);
         }
     }
+}
+
+
+
+/////// PageDetail
+
+.sidebar-detail{
+    margin-right: 20px;
+    background-color: #efefef;
+    border-radius: 20px;
+    padding: 20px;
+    button{
+        width: 200px;
+        margin: auto;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        padding: 5px 10px;
+        background-color: $primary-cl;
+        color: white;
+        border: none;
+        border-radius: 10px;
+    }
+}
+
+.content-detail{
+    border: 1px solid #57575799;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 
